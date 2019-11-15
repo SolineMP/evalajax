@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family:"STARWARS";
+    src:url("STARWARS/STARWARS.eot?") format("eot"),
+    url("STARWARS/STARWARS.woff") format("woff"),
+    url("STARWARS/STARWARS.ttf") format("truetype"),
+    url("STARWARS/STARWARS.svg#STARWARS") format("svg");
+    font-weight:normal;
+    font-style:normal;
+}
+
+body {
+    height: 100vh;
+}
+
+/*  HEADER  */
+
+header {
+    height: 10%;
+    background-color: black;
+}
+
+nav {
+    height: 100%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+li, header a, footer a {
+    list-style-type: none;
+    text-decoration: none;
+    color: yellow;
+    font-family: STARWARS, Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+}
+
+
+/* FOOTER */
+
+footer {
+    height: 8%;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+footer p {
+    font-family: STARWARS, Arial, Helvetica, sans-serif;
+    color: yellow;
+}
+
+.fa-heartbeat {
+    color: yellow;
+    margin: 1%;
+}
+
+.myFoot {
+    margin: 1%;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* HELPER */
+
+.flex {
+    display: flex;
+}
+
+.marginP {
+    margin: 2%;
+}
+
+/* MAIN */
+
+main {
+    background-image: url(../img/space-1164579_1920.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 88%;
+    text-align: center;
+    text-shadow: white 1px;
+}
+
+.presentation {
+    color: yellow;
+    text-align: center;
+
+}
+
+.searchInput, .searchButton {
+    padding: 1%;
+    background-color: yellow;
+    color: black;
+    border-radius: 25%;
+    border: black 2px solid;
+    font-family: STARWARS, Arial, Helvetica, sans-serif;
+    height: 50%;
+}
+
+table {
+    height: 50%;
+    width: 50%;
+    background-color: rgba(255, 255, 0, 0.603);
+    color: black;
+    font-weight: bold;
+    border: black 2px solid;
+    text-align: center;
+    border-radius: 5% / 45%;
+}
+
+tr {
+    font-weight: bold;
+    color: black;
+}
+
+.mainTest {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.peopleAnswer {
+    height: 50%;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.myButton {
+    height: 30%;
+
+}
+
+.answer {
+    height: 50%;
+    width: 50%;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background-image: url(../img/space-1164579_1920.png);
+        background-size: cover;
+        background-repeat: repeat;
+    }
+
+    ul li, li a {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: fit-content;
+        word-wrap: overflow-wrap;
+        overflow: hidden;
+    }
+  }
